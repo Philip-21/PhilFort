@@ -26,6 +26,6 @@ It supports **modern cryptographic techniques**, key-based authentication, file 
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/philfort.git
+git clone https://github.com/Philip-21/PhilFort
 cd philfort
 go build -o philfort ./cmd
