@@ -1,12 +1,14 @@
 package cmd
 
+//private and public key generation
+
 import (
 	"fmt"
 	"log"
 	"path/filepath"
 
+	"github.com/philip-21/philfort/internal/ssh"
 	"github.com/spf13/cobra"
-	"philfort/internal/ssh"
 )
 
 var privateKeyPath string
@@ -37,3 +39,6 @@ func init() {
 	genKeyCmd.Flags().StringVarP(&privateKeyPath, "output", "o", "./philfort", "Private key output path")
 	genKeyCmd.Flags().StringVarP(&publicKeyPath, "pub", "p", "./philfort.pub", "Public key output path")
 }
+
+//philfort gen-key -o ~/.ssh/philfort -p ~/.ssh/philfort.pub
+//philfort gen-key --output ~/.ssh/philfort --pub ~/.ssh/philfort.pub
