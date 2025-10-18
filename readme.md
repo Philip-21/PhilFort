@@ -31,3 +31,34 @@ cd PhilFort
 go mod tidy
 go build -o philfort .
 
+```
+
+## CLI Usage
+
+  PhilFort provides a unified CLI interface for key management, connections, and file transfer.
+  - 🔑 Generate SSH Key Pair:
+    
+       ```bash
+            philfort gen-key --output ~/.ssh/philfort --pub ~/.ssh/philfort.pub
+      ```
+      Description:
+      Generates a private (philfort) and public (philfort.pub) key pair using RSA-4096 encryption.
+      
+      Flags:
+      
+      -o, --output → Private key output path
+      
+      -p, --pub → Public key output path
+
+  - 
+
+
+
+
+
+
+
+
+
+
+
