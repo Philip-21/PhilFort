@@ -36,21 +36,36 @@ go build -o philfort .
 ## CLI Usage
 
   PhilFort provides a unified CLI interface for key management, connections, and file transfer.
-  - 🔑 Generate SSH Key Pair:
+  - Generate SSH Key Pair:
     
        ```bash
             philfort gen-key --output ~/.ssh/philfort --pub ~/.ssh/philfort.pub
       ```
-      Description:
-      Generates a private (philfort) and public (philfort.pub) key pair using RSA-4096 encryption.
-      
-      Flags:
-      
-      -o, --output → Private key output path
-      
-      -p, --pub → Public key output path
 
-  - 
+  -  Connect to a Server :
+  ```bash
+         philfort connect --host 192.168.1.20 --user ubuntu --key ~/.ssh/philfort
+
+  ```
+
+
+- Download a File
+ ```bash
+     philfort download --host 192.168.1.20 --user ubuntu --key ~/.ssh/philfort --src /home/ubuntu/app.log --dst ./app_copy.log
+```
+
+
+
+- Upload a File
+ ```bash
+       philfort upload --host 192.168.1.20 --user ubuntu --key ~/.ssh/philfort --src ./app.log --dst /home/ubuntu/app.log
+ ```
+
+
+
+
+
+
 
 
 
