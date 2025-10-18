@@ -27,5 +27,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Philip-21/PhilFort
-cd philfort
-go build -o philfort ./cmd
+cd PhilFort
+go mod tidy
+go build -o philfort .
+
