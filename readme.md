@@ -62,16 +62,28 @@ go build -o philfort .
  ```
 
 
+- To see all available commands and options, run
+   ```bash
+        philfort --help
+   ```
+
+
+## Notes
+
+ -  Always protect your private keys (chmod 600 ~/.ssh/philfort)
+  
+ -  Use Ed25519 for faster and smaller key pairs (support coming soon)
+  
+ - PhilFort is currently in active development — expect frequent updates and CLI improvements!
 
 
 
 
 
+## License
 
-
-
-
-
+PhilFort is licensed under the MIT License.
+© 2025 Philip-21 — Open for contributions and improvements.
 
 
 
