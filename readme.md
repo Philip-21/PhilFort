@@ -50,6 +50,7 @@ go build -o philfort .
 
 
 - Download a File
+  
  ```bash
      philfort download --host 192.168.1.20 --user ubuntu --key ~/.ssh/philfort --src /home/ubuntu/app.log --dst ./app_copy.log
 ```
@@ -57,12 +58,14 @@ go build -o philfort .
 
 
 - Upload a File
+
  ```bash
        philfort upload --host 192.168.1.20 --user ubuntu --key ~/.ssh/philfort --src ./app.log --dst /home/ubuntu/app.log
  ```
 
 
 - To see all available commands and options, run
+
    ```bash
         philfort --help
    ```
