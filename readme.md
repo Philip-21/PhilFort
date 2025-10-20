@@ -79,11 +79,11 @@ go build -o philfort .
 
 
 
-
+<!-- 
 ## License
 
 PhilFort is licensed under the MIT License.
-© 2025 Philip-21 — Open for contributions and improvements.
+© 2025 Philip-21 — Open for contributions and improvements. -->
 
 
 
